@@ -1,0 +1,154 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.pagina {
+  width: 375px;
+  height: 4477px;
+}
+
+header {
+  width: 375px;
+  height: 596px;
+  position: relative;
+}
+
+/* FONDO DEL HEADER */
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(158, 140, 108, 0.1);
+
+  clip-path: polygon(0 0, 100% 0, 100% 94%, 0 100%);
+
+  z-index: 0;
+}
+
+/* TODO EL CONTENIDO POR ENCIMA DEL FONDO */
+header img,
+header h1,
+header h3,
+header button {
+  position: relative;
+  z-index: 1;
+}
+
+header img {
+  width: 160px;
+  height: 160px;
+  margin-top: 80px;
+  margin-left: 108px;
+  border-radius: 175px;
+}
+
+header h3 {
+  color: #9e8c6c;
+
+  width: 346px;
+  height: 20px;
+  margin-left: 15px;
+
+  font-family: PT Sans Narrow;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+header h1 {
+  width: 346px;
+  height: 92px;
+  margin-left: 15px;
+
+  font-family: Playfair Display;
+  font-weight: 900;
+  font-size: 56px;
+  line-height: 46px;
+  letter-spacing: -2.17px;
+  text-align: center;
+}
+
+header button {
+  background-color: #0699a6;
+  color: white;
+  border: none;
+
+  width: 225px;
+  height: 60px;
+  margin-left: 75px;
+
+  font-family: PT Sans Narrow;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.about_me {
+  width: 335px;
+  height: 42px;
+  margin-top: 40px;
+  margin-left: 20px;
+}
+
+.rectangulo_azul {
+  background-color: #0699a6;
+
+  width: 54px;
+  height: 10px;
+}
+
+.skillset {
+  list-style: none;
+
+  width: 335px;
+  height: 210px;
+  margin-left: 20px;
+  padding: 0px;
+
+  font-family: PT Sans Narrow;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 34px;
+  letter-spacing: 0px;
+}
+
+.awards {
+  list-style: none;
+
+  width: 335px;
+  height: 210px;
+  margin-left: 20px;
+  padding: 0px;
+
+  font-family: PT Sans Narrow;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 34px;
+  letter-spacing: 0px;
+}
+
+.recent_works_ul {
+  color: #0699a6;
+  list-style: none;
+
+  width: 335px;
+  height: 210px;
+  margin-left: 20px;
+  padding: 0px;
+
+  font-family: PT Sans Narrow;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0px;
+}
