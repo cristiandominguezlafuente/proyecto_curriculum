@@ -93,11 +93,135 @@ header button {
   text-align: center;
 }
 
+.about_me h1 {
+  width: 335px;
+  height: 42px;
+  margin-left: 20px;
+
+  font-family: Playfair Display;
+  font-weight: 900;
+  font-size: 32px;
+  leading-trim: NONE;
+  line-height: 42px;
+  letter-spacing: 0px;
+}
+
+.about_me p {
+  width: 335px;
+  height: 240px;
+  margin-left: 20px;
+
+  font-family: PT Sans Narrow;
+  font-weight: 400;
+  font-size: 18px;
+  leading-trim: NONE;
+  line-height: 30px;
+  letter-spacing: 0px;
+}
+
+.experience h1 {
+  width: 335px;
+  height: 42px;
+  margin-left: 20px;
+
+  font-family: Playfair Display;
+  font-weight: 900;
+  font-size: 32px;
+  leading-trim: NONE;
+  line-height: 42px;
+  letter-spacing: 0px;
+}
+
+.experience h3 {
+  color: #9e8c6c;
+
+  width: 335px;
+  height: 24px;
+  margin-left: 20px;
+
+  font-family: PT Sans Narrow;
+  font-weight: 700;
+  font-size: 18px;
+  leading-trim: NONE;
+  line-height: 24px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.experience p {
+  width: 335px;
+  height: 210px;
+  margin-left: 20px;
+
+  font-family: PT Sans Narrow;
+  font-weight: 400;
+  font-size: 18px;
+  leading-trim: NONE;
+  line-height: 30px;
+  letter-spacing: 0px;
+}
+
+.experience h2 {
+  width: 224px;
+  height: 24px;
+  margin-left: 20px;
+
+  font-family: PT Sans Narrow;
+  font-weight: 400;
+  font-size: 18px;
+  leading-trim: NONE;
+  line-height: 24px;
+  letter-spacing: 0px;
+}
+
+.education h1 {
+  width: 335px;
+  height: 46px;
+  margin-left: 20px;
+
+  font-family: Playfair Display;
+  font-weight: 900;
+  font-size: 36px;
+  leading-trim: NONE;
+  line-height: 46px;
+  letter-spacing: 0px;
+}
+
+.education h3 {
+  color: #9e8c6c;
+
+  width: 333px;
+  height: 48px;
+  margin-left: 20px;
+
+  font-family: PT Sans Narrow;
+  font-weight: 700;
+  font-size: 18px;
+  leading-trim: NONE;
+  line-height: 24px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.education p {
+  width: 224px;
+  height: 24px;
+  margin-left: 20px;
+
+  font-family: PT Sans Narrow;
+  font-weight: 400;
+  font-size: 18px;
+  leading-trim: NONE;
+  line-height: 24px;
+  letter-spacing: 0px;
+}
+
 .rectangulo_azul {
   background-color: #0699a6;
 
   width: 54px;
   height: 10px;
+  margin: 0px 0px 40px 20px;
 }
 
 .skillset {
