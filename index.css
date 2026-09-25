@@ -216,7 +216,7 @@ header button {
   letter-spacing: 0px;
 }
 
-.rectangulo_azul {
+.rectangulo_azul_1 {
   background-color: #0699a6;
 
   width: 54px;
@@ -224,7 +224,45 @@ header button {
   margin: 0px 0px 40px 20px;
 }
 
-.skillset {
+.rectangulo_azul_2 {
+  background-color: #0699a6;
+
+  width: 54px;
+  height: 10px;
+  margin: 40px 0px 40px 20px;
+}
+
+.rectangulo_azul_3 {
+  background-color: #0699a6;
+
+  width: 54px;
+  height: 10px;
+  margin: 40px 0px 40px 20px;
+}
+
+h3 {
+  width: 350px;
+  height: 24px;
+  margin-left: 20px;
+}
+
+.listas h3 {
+  color: #9e8c6c;
+
+  width: 350px;
+  height: 24px;
+  margin-left: 20px;
+
+  font-family: PT Sans Narrow;
+  font-weight: 700;
+  font-size: 18px;
+  leading-trim: NONE;
+  line-height: 24px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.listas ul {
   list-style: none;
 
   width: 335px;
@@ -239,18 +277,16 @@ header button {
   letter-spacing: 0px;
 }
 
-.awards {
-  list-style: none;
-
+.carrera {
   width: 335px;
-  height: 210px;
+  height: 450px;
   margin-left: 20px;
-  padding: 0px;
 
   font-family: PT Sans Narrow;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 34px;
+  font-size: 18px;
+  leading-trim: NONE;
+  line-height: 30px;
   letter-spacing: 0px;
 }
 
@@ -263,9 +299,14 @@ header button {
   margin-left: 20px;
   padding: 0px;
 
-  font-family: PT Sans Narrow;
-  font-weight: 700;
+  font-family: Lucida Grande;
+  font-weight: 600;
   font-size: 18px;
+  leading-trim: NONE;
   line-height: 30px;
   letter-spacing: 0px;
+}
+
+footer{
+  
 }
