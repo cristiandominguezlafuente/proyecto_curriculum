@@ -308,19 +308,41 @@ h3 {
 }
 
 footer {
-  background-color: #9e8c6c;
-  opacity: 10%;
-
-  clip-path: polygon(0 12%, 100% 0%, 100% 100%, 0% 100%);
   width: 375px;
   height: 425px;
+  position: relative;
+}
+
+footer::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(158, 140, 108, 0.1);
+
+  clip-path: polygon(0 12%, 100% 0%, 100% 100%, 0% 100%);
+
+  z-index: 0;
+}
+
+footer h1,
+footer h2,
+footer img {
+  position: relative;
+  z-index: 1;
 }
 
 footer h1 {
   width: 335px;
   height: 50px;
   margin-left: 20px;
-  margin-top: 100px;
+  padding-top: 100px;
 
   font-family: Playfair Display;
   font-weight: 900;
@@ -337,6 +359,7 @@ footer h2 {
   width: 335px;
   height: 72px;
   margin-left: 20px;
+  margin-top: 40px;
 
   font-family: Playfair Display;
   font-weight: 900;
@@ -350,6 +373,9 @@ footer h2 {
 .iconos {
   display: flex;
   align-items: flex-end;
+
   width: 242px;
+  margin-top: 45px;
   margin-left: 66px;
+  gap: 45px;
 }
