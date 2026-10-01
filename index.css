@@ -272,6 +272,161 @@ header button {
   letter-spacing: 0px;
 }
 
+.nav {
+  margin-top: 40px;
+  margin-left: 20px;
+}
+
+.nav h2 {
+  color: #9e8c6c;
+
+  width: 350;
+  height: 24px;
+
+  font-family: PT Sans Narrow;
+  font-weight: 700;
+  font-size: 18px;
+  leading-trim: NONE;
+  line-height: 24px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.nav ul {
+  width: 335px;
+  height: 180px;
+
+  padding-left: 0px;
+
+  list-style: none;
+
+  font-family: PT Sans Narrow;
+  font-weight: 400;
+  font-size: 18px;
+  leading-trim: NONE;
+  line-height: 30px;
+  letter-spacing: 0px;
+}
+
+.carrera h2 {
+  color: #9e8c6c;
+
+  width: 350;
+  height: 24px;
+
+  font-family: PT Sans Narrow;
+  font-weight: 700;
+  font-size: 18px;
+  leading-trim: NONE;
+  line-height: 24px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.carrera_explicacion {
+  width: 335px;
+  height: 450px;
+
+  font-family: PT Sans Narrow;
+  font-weight: 400;
+  font-size: 18px;
+  leading-trim: NONE;
+  line-height: 30px;
+  letter-spacing: 0px;
+}
+
+.recent_works_ul {
+  color: #0699a6;
+
+  width: 335px;
+  height: 210px;
+
+  font-family: PT Sans Narrow;
+  font-weight: 700;
+  font-size: 18px;
+  leading-trim: NONE;
+  line-height: 30px;
+  letter-spacing: 0px;
+}
+
+footer {
+  width: 375px;
+  height: 425px;
+
+  margin-top: 71px;
+
+  position: relative;
+
+  padding-top: 100px;
+
+  clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+}
+
+footer::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(158, 140, 108, 0.1);
+
+  z-index: 0;
+}
+
+footer h1 {
+  width: 335px;
+  height: 50px;
+
+  margin: 0;
+
+  font-family: Playfair Display;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 50px;
+  letter-spacing: -1.14px;
+  text-align: center;
+
+  position: relative;
+  z-index: 1;
+}
+
+footer h2 {
+  color: #0699a6;
+
+  width: 335px;
+  height: 72px;
+
+  margin-top: 40px;
+  margin-bottom: 0;
+
+  font-family: Playfair Display;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 36px;
+  letter-spacing: 0px;
+  text-align: center;
+
+  position: relative;
+  z-index: 1;
+}
+
+footer .iconos {
+  display: flex;
+  justify-content: space-between;
+
+  width: 242px;
+  height: 25px;
+
+  margin-top: 45px;
+  margin-left: 50px;
+
+  position: relative;
+  z-index: 1;
+}
 
 .rectangulo_azul {
   background-color: #0699a6;
