@@ -278,12 +278,12 @@ header button {
 
 .nav {
   margin-left: 20px;
+  margin-top: 40px;
 }
 
 .nav h2 {
   width: 350px;
   height: 24px;
-  margin-top: 40px;
 
   color: #9e8c6c;
 
@@ -293,6 +293,10 @@ header button {
   line-height: 24px;
   letter-spacing: 2px;
   text-transform: uppercase;
+}
+
+.awards {
+  margin-top: 60px;
 }
 
 .nav ul {
