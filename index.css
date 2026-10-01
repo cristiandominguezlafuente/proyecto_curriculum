@@ -41,14 +41,17 @@ header button {
 }
 
 .photo {
-  width: 160px;
-  height: 160px;
-  margin-top: 80px;
-  margin-left: 108px;
-  border-radius: 175px;
+  position: absolute;
+  top: 80px;
+  left: 108px;
+  z-index: 1;
 }
 
 .combined_shape {
+  position: absolute;
+  top: 45px;
+  left: 160px;
+  z-index: 2;
 }
 
 header h3 {
