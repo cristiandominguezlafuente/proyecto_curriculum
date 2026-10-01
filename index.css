@@ -277,13 +277,13 @@ header button {
    ========================= */
 
 .nav {
-  margin-top: 40px;
   margin-left: 20px;
 }
 
 .nav h2 {
   width: 350px;
   height: 24px;
+  margin-top: 40px;
 
   color: #9e8c6c;
 
