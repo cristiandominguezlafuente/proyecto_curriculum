@@ -1,25 +1,18 @@
-/* =========================
-   GENERAL
-   ========================= */
-
 body {
   margin: 0;
   padding: 0;
 }
-
-/* =========================
-   HEADER
-   ========================= */
 
 header {
   position: relative;
   clip-path: polygon(0 0, 100% 0%, 100% 94%, 0 100%);
   display: flex;
   flex-direction: column;
-  overflow: hidden;
+  align-items: center;
 }
 
-header::before {
+header::before,
+footer::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -49,25 +42,32 @@ header::before {
   z-index: 2;
 }
 
-header h2 {
-  margin-top: 30px;
-  margin-left: 15px;
-  font-family: PT Sans Narrow;
+header h2,
+.experience h2,
+.education h2,
+.nav h2,
+.carrera h2 {
+  color: #9e8c6c;
+  font-family: "PT Sans Narrow";
   font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+header h2 {
+  margin: 30px 0 0 15px;
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 2px;
   text-align: center;
-  text-transform: uppercase;
-  color: #9e8c6c;
   position: relative;
   z-index: 1;
 }
 
 header h1 {
-  margin-top: 14px;
-  margin-left: 15px;
-  font-family: Playfair Display;
+  margin: 14px 0 0 15px;
+  font-family: "Playfair Display";
   font-weight: 900;
   font-size: 56px;
   line-height: 46px;
@@ -80,11 +80,11 @@ header h1 {
 header button {
   width: 225px;
   height: 60px;
-  margin: 10px 75px 100px 75px;
+  margin: 10px 75px 100px;
   border: none;
   background-color: #0699a6;
-  color: #ffffff;
-  font-family: PT Sans Narrow;
+  color: white;
+  font-family: "PT Sans Narrow";
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
@@ -95,253 +95,155 @@ header button {
   z-index: 1;
 }
 
-/* =========================
-   ABOUT ME
-   ========================= */
-
-.about_me {
-  margin-top: 0;
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
-.about_me h1 {
-  margin-top: 40px;
-  font-family: Playfair Display;
-  font-weight: 900;
-  font-size: 32px;
-  line-height: 42px;
-  letter-spacing: 0;
-}
-
-.about_me p {
-  margin-top: 10px;
-  font-family: PT Sans Narrow;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 30px;
-  letter-spacing: 0;
-}
-
-/* =========================
-   EXPERIENCE
-   ========================= */
-
-.experience {
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
-.experience h1 {
-  font-family: Playfair Display;
-  font-weight: 900;
-  font-size: 32px;
-  line-height: 42px;
-  letter-spacing: 0;
-}
-
-.experience h2 {
-  margin-top: 24px;
-  color: #9e8c6c;
-  font-family: PT Sans Narrow;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 24px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
-
-.experience h3 {
-  margin-top: 8px;
-  font-family: PT Sans Narrow;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 24px;
-  letter-spacing: 0;
-}
-
-.experience p {
-  margin-top: 20px;
-  font-family: PT Sans Narrow;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 30px;
-  letter-spacing: 0;
-}
-
-/* =========================
-   EDUCATION
-   ========================= */
-
-.education {
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
-.education h1 {
-  font-family: Playfair Display;
-  font-weight: 900;
-  font-size: 36px;
-  line-height: 46px;
-  letter-spacing: 0;
-}
-
-.education h2 {
-  color: #9e8c6c;
-  font-family: PT Sans Narrow;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 24px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
-
-.education p {
-  font-family: PT Sans Narrow;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 24px;
-  letter-spacing: 0;
-}
-
-/* =========================
-   NAV
-   ========================= */
-
+.about_me,
+.experience,
+.education,
 .nav {
   margin-left: 20px;
   margin-right: 20px;
 }
 
-.nav h2 {
-  color: #9e8c6c;
-  font-family: PT Sans Narrow;
-  font-weight: 700;
+.about_me h1,
+.experience h1,
+.education h1 {
+  font-family: "Playfair Display";
+  font-weight: 900;
+  letter-spacing: 0;
+}
+
+.about_me h1,
+.experience h1 {
+  font-size: 32px;
+  line-height: 42px;
+}
+
+.about_me h1 {
+  margin-top: 40px;
+}
+
+.about_me p,
+.experience p,
+.carrera_explicacion {
+  font-family: "PT Sans Narrow";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0;
+}
+
+.about_me p {
+  margin-top: 10px;
+}
+
+.experience h2 {
+  margin-top: 24px;
+  letter-spacing: 1px;
+}
+
+.experience h3 {
+  margin-top: 8px;
+  font-family: "PT Sans Narrow";
+  font-weight: 400;
   font-size: 18px;
   line-height: 24px;
+}
+
+.experience p {
+  margin-top: 20px;
+}
+
+.education h1 {
+  font-size: 36px;
+  line-height: 46px;
+}
+
+.education h2,
+.carrera h2 {
   letter-spacing: 2px;
-  text-transform: uppercase;
+}
+
+.education p {
+  font-family: "PT Sans Narrow";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.nav h2 {
+  letter-spacing: 2px;
 }
 
 .nav ul {
   padding-left: 0;
   list-style: none;
-  font-family: PT Sans Narrow;
+  font-family: "PT Sans Narrow";
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
-  letter-spacing: 0;
 }
 
 .awards {
   margin-top: 60px;
-  margin-left: 0;
-  margin-right: 0;
-}
-
-/* =========================
-   CARRERA
-   ========================= */
-
-.carrera h2 {
-  color: #9e8c6c;
-  font-family: PT Sans Narrow;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 24px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
 }
 
 .carrera_explicacion {
   margin-bottom: 60px;
-  font-family: PT Sans Narrow;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 30px;
-  letter-spacing: 0;
 }
 
 .recent_works_ul {
   color: #0699a6;
-  font-family: PT Sans Narrow;
+  font-family: "PT Sans Narrow";
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
-  letter-spacing: 0;
 }
-
-/* =========================
-   FOOTER
-   ========================= */
 
 footer {
   margin-top: 71px;
-  position: relative;
   padding-top: 100px;
+  position: relative;
   clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
   overflow: hidden;
 }
 
-footer::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-color: rgba(158, 140, 108, 0.1);
-  z-index: 0;
+footer h1,
+footer h2 {
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  font-family: "Playfair Display";
+  font-weight: 900;
 }
 
 footer h1 {
   margin-top: 0;
-  margin-left: 20px;
-  margin-right: 20px;
-  font-family: Playfair Display;
-  font-weight: 900;
   font-size: 40px;
   line-height: 50px;
   letter-spacing: -1.14px;
-  text-align: center;
-  position: relative;
-  z-index: 1;
 }
 
 footer h2 {
   margin-top: 40px;
-  margin-left: 20px;
-  margin-right: 20px;
   color: #0699a6;
-  font-family: Playfair Display;
-  font-weight: 900;
   font-size: 26px;
   line-height: 36px;
-  letter-spacing: 0;
-  text-align: center;
-  position: relative;
-  z-index: 1;
 }
 
 footer .iconos {
   display: flex;
   justify-content: space-between;
-  margin-top: 45px;
-  margin-bottom: 92px;
-  margin-left: 70px;
-  margin-right: 70px;
-
+  margin: 45px 70px 92px;
   position: relative;
   z-index: 1;
 }
 
-/* =========================
-   RECTÁNGULO AZUL
-   ========================= */
-
 .rectangulo_azul {
   width: 54px;
   height: 10px;
+  margin: 40px 0;
   margin-left: 20px;
-  margin-top: 40px;
-  margin-bottom: 40px;
   background-color: #0699a6;
 }
 
@@ -349,47 +251,6 @@ footer .iconos {
   display: block;
 }
 
-/* =========================
-   TABLET / DESKTOP
-   ========================= */
 
 @media (min-width: 768px) {
-  header h2 {
-    font-size: 18px;
-    line-height: 24px;
-  }
-
-  header h1 {
-    font-size: 86px;
-    line-height: 76px;
-  }
-
-  header button {
-    margin-top: 40px;
-    margin-bottom: 0;
-  }
-
-  .about_me {
-    margin-left: 144px;
-    margin-right: 142px;
-  }
-
-  .experience {
-    margin-left: 144px;
-    margin-right: 142px;
-  }
-
-  .education {
-    margin-left: 144px;
-    margin-right: 142px;
-  }
-
-  .nav {
-    margin-left: 144px;
-    margin-right: 142px;
-  }
-
-  .rectangulo_azul {
-    margin-left: 144px;
-  }
 }
