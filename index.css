@@ -332,3 +332,39 @@ footer .iconos {
   margin-bottom: 40px;
   background-color: #0699a6;
 }
+
+@media (min-width: 768px) {
+  header h2 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  header h1 {
+    font-size: 86px;
+    line-height: 76px;
+  }
+
+  .about_me {
+    margin-right: 142px;
+    margin-left: 144px;
+  }
+
+  .experience {
+    margin-right: 142px;
+    margin-left: 144px;
+  }
+
+  .education {
+    margin-right: 142px;
+    margin-left: 144px;
+  }
+
+  .nav {
+    margin-right: 142px;
+    margin-left: 144px;
+  }
+
+  .rectangulo_azul {
+    margin-left: 144px;
+  }
+}
