@@ -1,10 +1,17 @@
+/* =========================
+   GENERAL
+   ========================= */
+
 body {
   margin: 0;
   padding: 0;
 }
 
+/* =========================
+   HEADER
+   ========================= */
+
 header {
-  height: 596px;
   position: relative;
   clip-path: polygon(0 0, 100% 0%, 100% 94%, 0 100%);
   display: flex;
@@ -36,7 +43,6 @@ header::before {
 
 .combined_shape {
   width: 100px;
-  height: 99px;
   position: absolute;
   left: 90px;
   top: -30px;
@@ -44,7 +50,6 @@ header::before {
 }
 
 header h2 {
-  height: 20px;
   margin-top: 30px;
   margin-left: 15px;
   font-family: PT Sans Narrow;
@@ -60,7 +65,6 @@ header h2 {
 }
 
 header h1 {
-  height: 92px;
   margin-top: 14px;
   margin-left: 15px;
   font-family: Playfair Display;
@@ -76,7 +80,7 @@ header h1 {
 header button {
   width: 225px;
   height: 60px;
-  margin: 10px auto 0;
+  margin: 10px 75px 100px 75px;
   border: none;
   background-color: #0699a6;
   color: #ffffff;
@@ -91,6 +95,10 @@ header button {
   z-index: 1;
 }
 
+/* =========================
+   ABOUT ME
+   ========================= */
+
 .about_me {
   margin-top: 0;
   margin-left: 20px;
@@ -98,7 +106,6 @@ header button {
 }
 
 .about_me h1 {
-  height: 42px;
   margin-top: 40px;
   font-family: Playfair Display;
   font-weight: 900;
@@ -108,7 +115,6 @@ header button {
 }
 
 .about_me p {
-  height: 240px;
   margin-top: 10px;
   font-family: PT Sans Narrow;
   font-weight: 400;
@@ -117,14 +123,16 @@ header button {
   letter-spacing: 0;
 }
 
+/* =========================
+   EXPERIENCE
+   ========================= */
+
 .experience {
-  margin-top: 60px;
   margin-left: 20px;
   margin-right: 20px;
 }
 
 .experience h1 {
-  height: 42px;
   font-family: Playfair Display;
   font-weight: 900;
   font-size: 32px;
@@ -133,7 +141,6 @@ header button {
 }
 
 .experience h2 {
-  height: 24px;
   margin-top: 24px;
   color: #9e8c6c;
   font-family: PT Sans Narrow;
@@ -145,7 +152,6 @@ header button {
 }
 
 .experience h3 {
-  height: 24px;
   margin-top: 8px;
   font-family: PT Sans Narrow;
   font-weight: 400;
@@ -155,7 +161,6 @@ header button {
 }
 
 .experience p {
-  height: 210px;
   margin-top: 20px;
   font-family: PT Sans Narrow;
   font-weight: 400;
@@ -164,14 +169,16 @@ header button {
   letter-spacing: 0;
 }
 
+/* =========================
+   EDUCATION
+   ========================= */
+
 .education {
-  margin-top: 40px;
   margin-left: 20px;
   margin-right: 20px;
 }
 
 .education h1 {
-  height: 46px;
   font-family: Playfair Display;
   font-weight: 900;
   font-size: 36px;
@@ -180,7 +187,6 @@ header button {
 }
 
 .education h2 {
-  height: 48px;
   color: #9e8c6c;
   font-family: PT Sans Narrow;
   font-weight: 700;
@@ -191,7 +197,6 @@ header button {
 }
 
 .education p {
-  height: 24px;
   font-family: PT Sans Narrow;
   font-weight: 400;
   font-size: 18px;
@@ -199,14 +204,16 @@ header button {
   letter-spacing: 0;
 }
 
+/* =========================
+   NAV
+   ========================= */
+
 .nav {
-  margin-top: 40px;
   margin-left: 20px;
   margin-right: 20px;
 }
 
 .nav h2 {
-  height: 24px;
   color: #9e8c6c;
   font-family: PT Sans Narrow;
   font-weight: 700;
@@ -216,14 +223,7 @@ header button {
   text-transform: uppercase;
 }
 
-.awards {
-  margin-top: 60px;
-  margin-left: 0;
-  margin-right: 0;
-}
-
 .nav ul {
-  height: 180px;
   padding-left: 0;
   list-style: none;
   font-family: PT Sans Narrow;
@@ -233,8 +233,17 @@ header button {
   letter-spacing: 0;
 }
 
+.awards {
+  margin-top: 60px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* =========================
+   CARRERA
+   ========================= */
+
 .carrera h2 {
-  height: 24px;
   color: #9e8c6c;
   font-family: PT Sans Narrow;
   font-weight: 700;
@@ -245,7 +254,7 @@ header button {
 }
 
 .carrera_explicacion {
-  height: 450px;
+  margin-bottom: 60px;
   font-family: PT Sans Narrow;
   font-weight: 400;
   font-size: 18px;
@@ -254,7 +263,6 @@ header button {
 }
 
 .recent_works_ul {
-  height: 210px;
   color: #0699a6;
   font-family: PT Sans Narrow;
   font-weight: 700;
@@ -263,8 +271,11 @@ header button {
   letter-spacing: 0;
 }
 
+/* =========================
+   FOOTER
+   ========================= */
+
 footer {
-  height: 425px;
   margin-top: 71px;
   position: relative;
   padding-top: 100px;
@@ -281,7 +292,6 @@ footer::before {
 }
 
 footer h1 {
-  height: 50px;
   margin-top: 0;
   margin-left: 20px;
   margin-right: 20px;
@@ -296,7 +306,6 @@ footer h1 {
 }
 
 footer h2 {
-  height: 72px;
   margin-top: 40px;
   margin-left: 20px;
   margin-right: 20px;
@@ -314,24 +323,35 @@ footer h2 {
 footer .iconos {
   display: flex;
   justify-content: space-between;
-  height: 25px;
   margin-top: 45px;
+  margin-bottom: 92px;
   margin-left: 70px;
   margin-right: 70px;
+
   position: relative;
   z-index: 1;
 }
 
-/* RECTÁNGULO AZUL */
+/* =========================
+   RECTÁNGULO AZUL
+   ========================= */
 
 .rectangulo_azul {
   width: 54px;
   height: 10px;
-  margin-top: 40px;
   margin-left: 20px;
+  margin-top: 40px;
   margin-bottom: 40px;
   background-color: #0699a6;
 }
+
+.block {
+  display: block;
+}
+
+/* =========================
+   TABLET / DESKTOP
+   ========================= */
 
 @media (min-width: 768px) {
   header h2 {
@@ -344,24 +364,29 @@ footer .iconos {
     line-height: 76px;
   }
 
+  header button {
+    margin-top: 40px;
+    margin-bottom: 0;
+  }
+
   .about_me {
-    margin-right: 142px;
     margin-left: 144px;
+    margin-right: 142px;
   }
 
   .experience {
-    margin-right: 142px;
     margin-left: 144px;
+    margin-right: 142px;
   }
 
   .education {
-    margin-right: 142px;
     margin-left: 144px;
+    margin-right: 142px;
   }
 
   .nav {
-    margin-right: 142px;
     margin-left: 144px;
+    margin-right: 142px;
   }
 
   .rectangulo_azul {
