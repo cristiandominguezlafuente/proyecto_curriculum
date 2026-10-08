@@ -309,4 +309,28 @@ footer .iconos {
 }
 
 @media (min-width: 1440px) {
+
+  .foto_perfil {
+    width: 300px;
+    height: 300px;
+  }
+
+  .combined_shape {
+    width: 152px;
+    height: 152px;
+  }
+
+  header h1 {
+    font-size: 126px;
+    line-height: 112px;
+  }
+
+  header h2,
+  .experience h2,
+  .education h2,
+  .nav h2,
+  .carrera h2 {
+    font-size: 18px;
+    line-height: 24px;
+  }
 }
