@@ -1,85 +1,52 @@
-/* =========================
-   MOBILE FIRST
-   iPhone XS - 375px
-   ========================= */
-
-* {
-  box-sizing: border-box;
-}
-
-html,
 body {
   margin: 0;
   padding: 0;
 }
 
-body {
-  width: 100%;
-}
-
-/* PÁGINA */
-
-.pagina {
-  width: 100%;
-  max-width: 375px;
-  margin: 0 auto;
-}
-
-/* =========================
-   HEADER
-   ========================= */
-
 header {
-  width: 100%;
   height: 596px;
   position: relative;
   clip-path: polygon(0 0, 100% 0%, 100% 94%, 0 100%);
+  display: flex;
+  flex-direction: column;
 }
-
-/* FONDO DEL HEADER */
 
 header::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
   background-color: rgba(158, 140, 108, 0.1);
   z-index: 0;
 }
 
-/* FOTO */
+.foto_con_shape {
+  position: relative;
+  width: fit-content;
+  margin: 80px auto 0;
+}
 
 .foto_perfil {
   width: 160px;
   height: 160px;
-  margin-top: 80px;
-  margin-left: 108px;
   border-radius: 175px;
-  position: relative;
-  z-index: 1;
+  display: block;
 }
-
-/* FIGURA DECORATIVA */
 
 .combined_shape {
   width: 100px;
   height: 99px;
   position: absolute;
-  left: 198px;
-  top: 50px;
+  left: 90px;
+  top: -30px;
   z-index: 2;
 }
 
-/* TEXTO HEADER */
-
 header h2 {
-  width: 346px;
   height: 20px;
   margin-top: 30px;
   margin-left: 15px;
-
   font-family: PT Sans Narrow;
   font-weight: 700;
   font-size: 14px;
@@ -87,42 +54,32 @@ header h2 {
   letter-spacing: 2px;
   text-align: center;
   text-transform: uppercase;
-
   color: #9e8c6c;
-
   position: relative;
   z-index: 1;
 }
 
 header h1 {
-  width: 346px;
   height: 92px;
   margin-top: 14px;
   margin-left: 15px;
-
   font-family: Playfair Display;
   font-weight: 900;
   font-size: 56px;
   line-height: 46px;
   letter-spacing: -2.17px;
   text-align: center;
-
   position: relative;
   z-index: 1;
 }
 
-/* BOTÓN */
-
 header button {
   width: 225px;
   height: 60px;
-  margin-top: 10px;
-  margin-left: 75px;
-
+  margin: 10px auto 0;
   border: none;
   background-color: #0699a6;
   color: #ffffff;
-
   font-family: PT Sans Narrow;
   font-weight: 700;
   font-size: 18px;
@@ -130,25 +87,19 @@ header button {
   letter-spacing: 2px;
   text-align: center;
   text-transform: uppercase;
-
   position: relative;
   z-index: 1;
 }
 
-/* =========================
-   ABOUT ME
-   ========================= */
-
 .about_me {
   margin-top: 0;
   margin-left: 20px;
+  margin-right: 20px;
 }
 
 .about_me h1 {
-  width: 335px;
   height: 42px;
   margin-top: 40px;
-
   font-family: Playfair Display;
   font-weight: 900;
   font-size: 32px;
@@ -157,10 +108,8 @@ header button {
 }
 
 .about_me p {
-  width: 335px;
   height: 240px;
   margin-top: 10px;
-
   font-family: PT Sans Narrow;
   font-weight: 400;
   font-size: 18px;
@@ -168,19 +117,14 @@ header button {
   letter-spacing: 0;
 }
 
-/* =========================
-   EXPERIENCE
-   ========================= */
-
 .experience {
   margin-top: 60px;
   margin-left: 20px;
+  margin-right: 20px;
 }
 
 .experience h1 {
-  width: 335px;
   height: 42px;
-
   font-family: Playfair Display;
   font-weight: 900;
   font-size: 32px;
@@ -189,12 +133,9 @@ header button {
 }
 
 .experience h2 {
-  width: 335px;
   height: 24px;
   margin-top: 24px;
-
   color: #9e8c6c;
-
   font-family: PT Sans Narrow;
   font-weight: 700;
   font-size: 18px;
@@ -204,10 +145,8 @@ header button {
 }
 
 .experience h3 {
-  width: 224px;
   height: 24px;
   margin-top: 8px;
-
   font-family: PT Sans Narrow;
   font-weight: 400;
   font-size: 18px;
@@ -216,10 +155,8 @@ header button {
 }
 
 .experience p {
-  width: 335px;
   height: 210px;
   margin-top: 20px;
-
   font-family: PT Sans Narrow;
   font-weight: 400;
   font-size: 18px;
@@ -227,19 +164,14 @@ header button {
   letter-spacing: 0;
 }
 
-/* =========================
-   EDUCATION
-   ========================= */
-
 .education {
   margin-top: 40px;
   margin-left: 20px;
+  margin-right: 20px;
 }
 
 .education h1 {
-  width: 335px;
   height: 46px;
-
   font-family: Playfair Display;
   font-weight: 900;
   font-size: 36px;
@@ -248,11 +180,8 @@ header button {
 }
 
 .education h2 {
-  width: 333px;
   height: 48px;
-
   color: #9e8c6c;
-
   font-family: PT Sans Narrow;
   font-weight: 700;
   font-size: 18px;
@@ -262,9 +191,7 @@ header button {
 }
 
 .education p {
-  width: 224px;
   height: 24px;
-
   font-family: PT Sans Narrow;
   font-weight: 400;
   font-size: 18px;
@@ -272,21 +199,15 @@ header button {
   letter-spacing: 0;
 }
 
-/* =========================
-   NAV
-   ========================= */
-
 .nav {
-  margin-left: 20px;
   margin-top: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .nav h2 {
-  width: 350px;
   height: 24px;
-
   color: #9e8c6c;
-
   font-family: PT Sans Narrow;
   font-weight: 700;
   font-size: 18px;
@@ -297,15 +218,14 @@ header button {
 
 .awards {
   margin-top: 60px;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .nav ul {
-  width: 335px;
   height: 180px;
   padding-left: 0;
-
   list-style: none;
-
   font-family: PT Sans Narrow;
   font-weight: 400;
   font-size: 18px;
@@ -313,16 +233,9 @@ header button {
   letter-spacing: 0;
 }
 
-/* =========================
-   CARRERA
-   ========================= */
-
 .carrera h2 {
-  width: 350px;
   height: 24px;
-
   color: #9e8c6c;
-
   font-family: PT Sans Narrow;
   font-weight: 700;
   font-size: 18px;
@@ -332,9 +245,7 @@ header button {
 }
 
 .carrera_explicacion {
-  width: 335px;
   height: 450px;
-
   font-family: PT Sans Narrow;
   font-weight: 400;
   font-size: 18px;
@@ -342,16 +253,9 @@ header button {
   letter-spacing: 0;
 }
 
-/* =========================
-   RECENT WORKS
-   ========================= */
-
 .recent_works_ul {
-  width: 335px;
   height: 210px;
-
   color: #0699a6;
-
   font-family: PT Sans Narrow;
   font-weight: 700;
   font-size: 18px;
@@ -359,91 +263,62 @@ header button {
   letter-spacing: 0;
 }
 
-/* =========================
-   FOOTER
-   ========================= */
-
 footer {
-  width: 100%;
   height: 425px;
   margin-top: 71px;
-
   position: relative;
   padding-top: 100px;
-
   clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
 }
-
-/* FONDO DEL FOOTER */
 
 footer::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
-
-  width: 100%;
   height: 100%;
-
   background-color: rgba(158, 140, 108, 0.1);
-
   z-index: 0;
 }
 
-/* TÍTULO */
-
 footer h1 {
-  width: 335px;
   height: 50px;
-
   margin-top: 0;
   margin-left: 20px;
-
+  margin-right: 20px;
   font-family: Playfair Display;
   font-weight: 900;
   font-size: 40px;
   line-height: 50px;
   letter-spacing: -1.14px;
   text-align: center;
-
   position: relative;
   z-index: 1;
 }
 
-/* TEXTO */
-
 footer h2 {
-  width: 335px;
   height: 72px;
-
   margin-top: 40px;
   margin-left: 20px;
-
+  margin-right: 20px;
   color: #0699a6;
-
   font-family: Playfair Display;
   font-weight: 900;
   font-size: 26px;
   line-height: 36px;
   letter-spacing: 0;
   text-align: center;
-
   position: relative;
   z-index: 1;
 }
 
-/* ICONOS */
-
 footer .iconos {
   display: flex;
   justify-content: space-between;
-
-  width: 242px;
   height: 25px;
-
   margin-top: 45px;
   margin-left: 70px;
-
+  margin-right: 70px;
   position: relative;
   z-index: 1;
 }
@@ -453,10 +328,8 @@ footer .iconos {
 .rectangulo_azul {
   width: 54px;
   height: 10px;
-
   margin-top: 40px;
   margin-left: 20px;
   margin-bottom: 40px;
-
   background-color: #0699a6;
 }
