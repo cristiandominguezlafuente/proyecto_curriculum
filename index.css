@@ -199,6 +199,9 @@ header button {
 }
 
 footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-top: 71px;
   padding-top: 100px;
   position: relative;
@@ -234,9 +237,10 @@ footer h2 {
 footer .iconos {
   display: flex;
   justify-content: space-between;
-  margin: 45px 70px 92px;
-  position: relative;
-  z-index: 1;
+  margin-top: 45px;
+  margin-bottom: 92px;
+  width: 242px;
+  height: 25px;
 }
 
 .rectangulo_azul {
@@ -310,49 +314,8 @@ footer .iconos {
 
 @media (min-width: 1440px) {
   header {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-  }
-
-  .foto_con_shape {
-    grid-column: 1;
-    align-items: center;
-  }
-
-  .foto_perfil {
-    width: 350px;
-    height: 350px;
-  }
-
-  .combined_shape {
-    margin-top: 220px;
-    margin-left: 70px;
-    width: 152px;
-    height: 152px;
-  }
-
-  .header_texto {
-    grid-column: 2;
-    text-align: left;
-  }
-
-  .header_texto h1 {
-    margin-left: 0;
-    font-size: 126px;
-    line-height: 112px;
-    text-align: left;
-  }
-
-  .header_texto h2 {
-    margin-top: 180px;
-    margin-left: 0;
-    text-align: left;
-  }
-
-  .header_texto button {
-    margin-bottom: 209px;
-    margin-left: 0;
+    display: flex;
+    flex-direction: row;
   }
 
   main {
@@ -361,11 +324,9 @@ footer .iconos {
   }
 
   .columna_1 {
-    margin-top: 90px;
   }
 
   .columna_2 {
-    margin-top: 83px;
   }
 
   .rectangulo_azul {
@@ -378,6 +339,16 @@ footer .iconos {
   .about_me h1,
   .experience h1,
   .education h1 {
+    font-size: 36px;
+    line-height: 46px;
+  }
+
+  footer h1 {
+    font-size: 66px;
+    line-height: 82px;
+  }
+
+  footer h2 {
     font-size: 36px;
     line-height: 46px;
   }
