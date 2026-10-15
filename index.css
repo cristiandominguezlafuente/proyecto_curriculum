@@ -309,28 +309,76 @@ footer .iconos {
 }
 
 @media (min-width: 1440px) {
+  header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  .foto_con_shape {
+    grid-column: 1;
+    align-items: center;
+  }
 
   .foto_perfil {
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
   }
 
   .combined_shape {
+    margin-top: 220px;
+    margin-left: 70px;
     width: 152px;
     height: 152px;
   }
 
-  header h1 {
-    font-size: 126px;
-    line-height: 112px;
+  .header_texto {
+    grid-column: 2;
+    text-align: left;
   }
 
-  header h2,
-  .experience h2,
-  .education h2,
-  .nav h2,
-  .carrera h2 {
-    font-size: 18px;
-    line-height: 24px;
+  .header_texto h1 {
+    margin-left: 0;
+    font-size: 126px;
+    line-height: 112px;
+    text-align: left;
+  }
+
+  .header_texto h2 {
+    margin-top: 180px;
+    margin-left: 0;
+    text-align: left;
+  }
+
+  .header_texto button {
+    margin-bottom: 209px;
+    margin-left: 0;
+  }
+
+  main {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .columna_1 {
+    margin-top: 90px;
+  }
+
+  .columna_2 {
+    margin-top: 83px;
+  }
+
+  .rectangulo_azul {
+    margin-top: 80px;
+    margin-bottom: 66px;
+    width: 71px;
+    height: 10px;
+  }
+
+  .about_me h1,
+  .experience h1,
+  .education h1 {
+    font-size: 36px;
+    line-height: 46px;
   }
 }
