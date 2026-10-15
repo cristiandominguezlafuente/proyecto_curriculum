@@ -314,19 +314,23 @@ footer .iconos {
 
 @media (min-width: 1440px) {
   header {
-    display: flex;
-    flex-direction: row;
+  }
+
+  .header_texto {
   }
 
   main {
     display: flex;
     flex-direction: row-reverse;
+    justify-content: center;
   }
 
   .columna_1 {
+    margin-top: 140px;
   }
 
   .columna_2 {
+    margin-top: 80px;
   }
 
   .rectangulo_azul {
@@ -344,12 +348,24 @@ footer .iconos {
   }
 
   footer h1 {
+    margin-top: 177px;
     font-size: 66px;
     line-height: 82px;
   }
 
   footer h2 {
+    max-width: 635px;
     font-size: 36px;
     line-height: 46px;
+  }
+
+  .iconos {
+    margin-bottom: 111px;
+  }
+
+  .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 }
