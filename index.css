@@ -327,10 +327,14 @@ footer .iconos {
 
   .columna_1 {
     margin-top: 140px;
+    margin-left: 165px;
+    width: 350px;
+    gap: 100px;
   }
 
   .columna_2 {
     margin-top: 80px;
+    margin-right: 165px;
   }
 
   .rectangulo_azul {
@@ -345,6 +349,12 @@ footer .iconos {
   .education h1 {
     font-size: 36px;
     line-height: 46px;
+  }
+
+  .about_me p,
+  .experience p {
+    font-size: 20px;
+    line-height: 34px;
   }
 
   footer h1 {
@@ -367,5 +377,9 @@ footer .iconos {
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
+
+  .hidden {
+    display: none;
   }
 }
