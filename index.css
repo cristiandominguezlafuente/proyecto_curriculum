@@ -314,27 +314,60 @@ footer .iconos {
 
 @media (min-width: 1440px) {
   header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 180px;
+    padding-bottom: 217px;
+    gap: 125px;
   }
 
-  .header_texto {
+  header h1 {
+    margin-left: 0;
+    text-align: left;
+    font-size: 126px;
+    line-height: 112px;
+  }
+
+  header h2 {
+    margin-left: 0;
+    text-align: left;
+  }
+
+  .foto_con_shape {
+    margin: 0;
+  }
+
+  .foto_perfil {
+    width: 350px;
+    height: 350px;
+  }
+
+  .combined_shape {
+    width: 152px;
+    height: 152px;
+    margin-top: 270px;
+    margin-left: 110px;
   }
 
   main {
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
+    align-items: center;
+
+    margin-top: 0px;
+    margin-left: 165px;
+    margin-right: 165px;
+    
+    padding-top: 90px;
+    padding-bottom: 80px;
   }
 
   .columna_1 {
-    margin-top: 140px;
-    margin-left: 165px;
-    width: 350px;
-    gap: 100px;
   }
 
   .columna_2 {
-    margin-top: 80px;
-    margin-right: 165px;
   }
 
   .rectangulo_azul {
