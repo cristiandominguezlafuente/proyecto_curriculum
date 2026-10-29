@@ -99,6 +99,13 @@ header button {
   z-index: 1;
 }
 
+.header_texto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
 .about_me,
 .experience,
 .education,
@@ -321,9 +328,17 @@ footer .iconos {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     padding-top: 180px;
     padding-bottom: 217px;
     gap: 125px;
+  }
+
+  .header_texto {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: auto;
   }
 
   header h1 {
@@ -336,6 +351,10 @@ footer .iconos {
   header h2 {
     margin-left: 0;
     text-align: left;
+  }
+
+  header button {
+    align-self: flex-start;
   }
 
   .foto_con_shape {
@@ -358,6 +377,7 @@ footer .iconos {
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
+    align-items: flex-start;
 
     margin-left: 165px;
     margin-right: 165px;
@@ -439,5 +459,9 @@ footer .iconos {
 
   footer h2 .separador {
     display: inline;
+  }
+
+  footer h2 {
+    gap: 20px;
   }
 }
