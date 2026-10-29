@@ -1,3 +1,7 @@
+footer h2 .separador {
+  display: none;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -354,20 +358,17 @@ footer .iconos {
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
-    align-items: center;
 
-    margin-top: 0px;
     margin-left: 165px;
     margin-right: 165px;
-    
+
     padding-top: 90px;
     padding-bottom: 80px;
   }
 
   .columna_1 {
-  }
-
-  .columna_2 {
+    width: 315px;
+    margin-top: 60px;
   }
 
   .rectangulo_azul {
@@ -388,6 +389,12 @@ footer .iconos {
   .experience p {
     font-size: 20px;
     line-height: 34px;
+  }
+
+  .awards,
+  .carrera,
+  .recent_works {
+    margin-top: 100px;
   }
 
   footer h1 {
@@ -414,5 +421,23 @@ footer .iconos {
 
   .hidden {
     display: none;
+  }
+
+  .experience h1 {
+    margin-bottom: 10px;
+  }
+
+  .experience h2,
+  .experience h3,
+  .experience p {
+    margin-top: 0;
+  }
+
+  .education h2 {
+    margin-top: 0;
+  }
+
+  footer h2 .separador {
+    display: inline;
   }
 }
