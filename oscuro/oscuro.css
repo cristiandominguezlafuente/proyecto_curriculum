@@ -1,0 +1,577 @@
+/* ==============================
+   VARIABLES CSS
+============================== */
+
+:root {
+  --color-principal: #0699a6;
+  --color-secundario: #9e8c6c;
+  --color-blanco: #ffffff;
+  --color-negro: #000000;
+
+  --fuente-titulos: "Playfair Display";
+  --fuente-texto: "PT Sans Narrow";
+}
+
+/* ==============================
+   ESTILOS GENERALES
+============================== */
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* ==============================
+   HEADER
+============================== */
+
+header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 596px;
+  clip-path: polygon(0 0, 100% 0%, 100% 94%, 0 100%);
+}
+
+header::before,
+footer::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(158, 140, 108, 0.1);
+  z-index: 0;
+}
+
+.header_texto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.foto_con_shape {
+  position: relative;
+  width: fit-content;
+  margin: 80px auto 0;
+  z-index: 1;
+}
+
+.foto_perfil {
+  display: block;
+  width: 160px;
+  height: 160px;
+  border-radius: 175px;
+}
+
+.combined_shape {
+  position: absolute;
+  width: 100px;
+  left: 90px;
+  top: -30px;
+  z-index: 2;
+}
+
+header h2,
+.experience h2,
+.education h2,
+.nav h2,
+.carrera h2 {
+  color: var(--color-secundario);
+  font-family: var(--fuente-texto);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+header h2 {
+  position: relative;
+  z-index: 1;
+  margin: 30px 0 0 15px;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+header h1 {
+  position: relative;
+  z-index: 1;
+  margin: 14px 0 0 15px;
+  font-family: var(--fuente-titulos);
+  font-weight: 900;
+  font-size: 56px;
+  line-height: 46px;
+  letter-spacing: -2.17px;
+  text-align: center;
+}
+
+header button {
+  position: relative;
+  z-index: 1;
+  width: 225px;
+  height: 60px;
+  margin: 40px 0 100px;
+  border: none;
+  background-color: var(--color-principal);
+  color: var(--color-blanco);
+  font-family: var(--fuente-texto);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 2px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* ==============================
+   MAIN - CONTENIDO GENERAL
+============================== */
+
+.about_me,
+.experience,
+.education,
+.nav {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.about_me h1,
+.experience h1,
+.education h1 {
+  font-family: var(--fuente-titulos);
+  font-weight: 900;
+  letter-spacing: 0;
+}
+
+.about_me h1,
+.experience h1 {
+  font-size: 32px;
+  line-height: 42px;
+}
+
+.about_me h1 {
+  margin-top: 40px;
+}
+
+.about_me p,
+.experience p,
+.carrera_explicacion {
+  font-family: var(--fuente-texto);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0;
+}
+
+.about_me p {
+  margin-top: 10px;
+}
+
+/* ==============================
+   EXPERIENCE
+============================== */
+
+.experience h2 {
+  margin-top: 24px;
+  letter-spacing: 1px;
+}
+
+.experience h3 {
+  margin-top: 8px;
+  font-family: var(--fuente-texto);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.experience p {
+  margin-top: 20px;
+}
+
+/* ==============================
+   EDUCATION
+============================== */
+
+.education h1 {
+  font-size: 36px;
+  line-height: 46px;
+}
+
+.education h2,
+.carrera h2,
+.nav h2 {
+  letter-spacing: 2px;
+}
+
+.education p {
+  font-family: var(--fuente-texto);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+/* ==============================
+   COLUMNA LATERAL
+============================== */
+
+.nav ul {
+  padding-left: 0;
+  list-style: none;
+  font-family: var(--fuente-texto);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+/* ==============================
+   OTHER SECTIONS
+============================== */
+
+.awards {
+  margin-top: 60px;
+}
+
+.carrera_explicacion {
+  margin-bottom: 60px;
+}
+
+.recent_works_ul {
+  color: var(--color-principal);
+  font-family: var(--fuente-texto);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.rectangulo_azul {
+  width: 54px;
+  height: 10px;
+  margin: 40px 0;
+  margin-left: 20px;
+  background-color: var(--color-principal);
+}
+
+.block {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+/* ==============================
+   FOOTER
+============================== */
+
+footer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 71px;
+  padding-top: 100px;
+  padding-bottom: 92px;
+  min-height: 425px;
+  box-sizing: border-box;
+  overflow: hidden;
+  clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+}
+
+footer h1,
+footer h2 {
+  position: relative;
+  z-index: 1;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: center;
+  font-family: var(--fuente-titulos);
+  font-weight: 900;
+}
+
+footer h1 {
+  margin-top: 0;
+  font-size: 40px;
+  line-height: 50px;
+  letter-spacing: -1.14px;
+}
+
+footer h2 {
+  margin-top: 40px;
+  color: var(--color-principal);
+  font-size: 26px;
+  line-height: 36px;
+}
+
+footer h2 .separador {
+  display: none;
+}
+
+footer .iconos {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  width: 242px;
+  height: 25px;
+  margin-top: 45px;
+  margin-bottom: 0;
+}
+
+/* ==============================
+   TABLET
+============================== */
+
+@media (min-width: 768px) {
+  header {
+    height: 736px;
+  }
+
+  .foto_perfil {
+    width: 200px;
+    height: 200px;
+  }
+
+  .combined_shape {
+    left: 130px;
+  }
+
+  header h1 {
+    font-size: 86px;
+    line-height: 76px;
+  }
+
+  header h2,
+  .experience h2,
+  .education h2,
+  .nav h2,
+  .carrera h2 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .about_me,
+  .experience,
+  .education,
+  .nav {
+    margin-left: 144px;
+    margin-right: 139px;
+  }
+
+  footer {
+    min-height: 501px;
+    padding-bottom: 112px;
+  }
+
+  footer h1 {
+    margin-top: 120px;
+    font-size: 56px;
+    line-height: 66px;
+  }
+
+  footer h2 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .rectangulo_azul {
+    margin-left: 144px;
+    margin-right: 139px;
+  }
+}
+
+/* ==============================
+   ESCRITORIO
+============================== */
+
+@media (min-width: 1440px) {
+  /* HEADER */
+
+  header {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 125px;
+    height: 747px;
+    padding-top: 180px;
+    padding-bottom: 217px;
+  }
+
+  .header_texto {
+    align-items: flex-start;
+    width: auto;
+  }
+
+  header h1 {
+    margin-left: 0;
+    font-size: 126px;
+    line-height: 112px;
+    text-align: left;
+  }
+
+  header h2 {
+    margin-left: 0;
+    text-align: left;
+  }
+
+  header button {
+    align-self: flex-start;
+  }
+
+  .foto_con_shape {
+    margin: 0;
+  }
+
+  .foto_perfil {
+    width: 350px;
+    height: 350px;
+  }
+
+  .combined_shape {
+    width: 152px;
+    height: 152px;
+    margin-top: 270px;
+    margin-left: 110px;
+  }
+
+  /* MAIN */
+
+  main {
+    display: grid;
+    grid-template-columns: 350px 635px;
+    column-gap: 125px;
+    align-items: start;
+
+    width: 1110px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 90px 0 80px;
+  }
+
+  /* COLUMNA LATERAL */
+
+  .nav {
+    grid-column: 1;
+    grid-row: 1;
+
+    width: 315px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav h2 {
+    margin-top: 0;
+  }
+
+  /* COLUMNA PRINCIPAL */
+
+  .about_me,
+  .experience,
+  .education {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .about_me h1 {
+    margin-top: 0;
+  }
+
+  /* TEXTOS */
+
+  .about_me p,
+  .experience p {
+    width: 100%;
+    font-size: 20px;
+    line-height: 34px;
+    text-align: left;
+  }
+
+  .carrera_explicacion p {
+    text-align: left;
+  }
+
+  /* TITULOS */
+
+  .about_me h1,
+  .experience h1,
+  .education h1 {
+    font-size: 36px;
+    line-height: 46px;
+  }
+
+  .experience h1 {
+    margin-bottom: 10px;
+  }
+
+  .experience h2,
+  .experience h3,
+  .experience p {
+    margin-top: 0;
+  }
+
+  .education h2 {
+    margin-top: 0;
+  }
+
+  /* SEPARADORES */
+
+  .rectangulo_azul {
+    width: 71px;
+    height: 10px;
+    margin: 80px 0 66px;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  /* COLUMNA LATERAL: ESPACIADO */
+
+  .nav ul {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .awards,
+  .carrera,
+  .recent_works {
+    margin-top: 100px;
+  }
+
+  /* FLEX */
+
+  .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  /* FOOTER */
+
+  footer {
+    min-height: 0;
+    padding-bottom: 111px;
+  }
+
+  footer h1 {
+    margin-top: 177px;
+    font-size: 66px;
+    line-height: 82px;
+  }
+
+  footer h2 {
+    font-size: 36px;
+    line-height: 46px;
+    gap: 20px;
+  }
+
+  footer h2 .separador {
+    display: inline;
+  }
+
+  footer .iconos {
+    margin-bottom: 0;
+  }
+}
