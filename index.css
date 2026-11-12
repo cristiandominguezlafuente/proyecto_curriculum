@@ -493,6 +493,12 @@ footer .iconos {
 
   /* FOOTER */
 
+  footer {
+    height: auto;
+    min-height: 501px;
+    padding-bottom: 111px;
+  }
+
   footer h1 {
     margin-top: 177px;
     font-size: 66px;
@@ -510,6 +516,6 @@ footer .iconos {
   }
 
   footer .iconos {
-    margin-bottom: 111px;
+    margin-bottom: 0;
   }
 }
