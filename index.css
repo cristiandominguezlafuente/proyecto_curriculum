@@ -197,6 +197,7 @@ header button {
 .education h1 {
   font-size: 36px;
   line-height: 46px;
+  margin-bottom: 0;
 }
 
 .education h2,
@@ -461,8 +462,8 @@ footer .iconos {
     padding: 0;
   }
 
-  .nav h2 {
-    margin-top: 0;
+  .skillset h2 {
+    margin-top: 15px;
   }
 
   /* COLUMNA PRINCIPAL */
@@ -574,5 +575,9 @@ footer .iconos {
 
   footer .iconos {
     margin-bottom: 0;
+  }
+
+  .separacion {
+    margin-top: 66px;
   }
 }
