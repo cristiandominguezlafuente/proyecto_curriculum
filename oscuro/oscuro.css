@@ -3,11 +3,17 @@
 ============================== */
 
 :root {
+  /* COLORES */
   --color-principal: #0699a6;
   --color-secundario: #9e8c6c;
-  --color-blanco: #ffffff;
-  --color-negro: #000000;
+  --color-blanco: #e6f5f6;
+  --color-negro: #010f11;
 
+  --color-fondoheader: #010f11;
+  --color-fondomain: #0e1b1d;
+  --color-fondofooter: #010f11;
+
+  /* TIPOGRAFÍAS */
   --fuente-titulos: "Playfair Display";
   --fuente-texto: "PT Sans Narrow";
 }
@@ -19,6 +25,8 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: var(--color-fondomain);
+  color: var(--color-blanco);
 }
 
 /* ==============================
@@ -32,6 +40,7 @@ header {
   align-items: center;
   height: 596px;
   clip-path: polygon(0 0, 100% 0%, 100% 94%, 0 100%);
+  background-color: var(--color-fondoheader);
 }
 
 header::before,
@@ -39,7 +48,7 @@ footer::before {
   content: "";
   position: absolute;
   inset: 0;
-  background-color: rgba(158, 140, 108, 0.1);
+  background-color: rgba(158, 140, 108, 0.04);
   z-index: 0;
 }
 
@@ -99,6 +108,7 @@ header h1 {
   position: relative;
   z-index: 1;
   margin: 14px 0 0 15px;
+  color: var(--color-blanco);
   font-family: var(--fuente-titulos);
   font-weight: 900;
   font-size: 56px;
@@ -129,6 +139,10 @@ header button {
    MAIN - CONTENIDO GENERAL
 ============================== */
 
+main {
+  background-color: var(--color-fondomain);
+}
+
 .about_me,
 .experience,
 .education,
@@ -140,6 +154,7 @@ header button {
 .about_me h1,
 .experience h1,
 .education h1 {
+  color: var(--color-blanco);
   font-family: var(--fuente-titulos);
   font-weight: 900;
   letter-spacing: 0;
@@ -158,6 +173,7 @@ header button {
 .about_me p,
 .experience p,
 .carrera_explicacion {
+  color: var(--color-blanco);
   font-family: var(--fuente-texto);
   font-weight: 400;
   font-size: 18px;
@@ -180,6 +196,7 @@ header button {
 
 .experience h3 {
   margin-top: 8px;
+  color: var(--color-blanco);
   font-family: var(--fuente-texto);
   font-weight: 400;
   font-size: 18px;
@@ -206,6 +223,7 @@ header button {
 }
 
 .education p {
+  color: var(--color-blanco);
   font-family: var(--fuente-texto);
   font-weight: 400;
   font-size: 18px;
@@ -219,6 +237,7 @@ header button {
 .nav ul {
   padding-left: 0;
   list-style: none;
+  color: var(--color-blanco);
   font-family: var(--fuente-texto);
   font-weight: 400;
   font-size: 18px;
@@ -277,6 +296,7 @@ footer {
   box-sizing: border-box;
   overflow: hidden;
   clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+  background-color: var(--color-fondofooter);
 }
 
 footer h1,
@@ -292,6 +312,7 @@ footer h2 {
 
 footer h1 {
   margin-top: 0;
+  color: var(--color-blanco);
   font-size: 40px;
   line-height: 50px;
   letter-spacing: -1.14px;
@@ -442,7 +463,6 @@ footer .iconos {
     grid-template-columns: 350px 635px;
     column-gap: 125px;
     align-items: start;
-
     width: 1110px;
     max-width: 100%;
     margin: 0 auto;
@@ -454,7 +474,6 @@ footer .iconos {
   .nav {
     grid-column: 1;
     grid-row: 1;
-
     width: 315px;
     margin: 0;
     padding: 0;
