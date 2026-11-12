@@ -1,4 +1,18 @@
 /* ==============================
+   VARIABLES CSS
+============================== */
+
+:root {
+  --color-principal: #0699a6;
+  --color-secundario: #9e8c6c;
+  --color-blanco: #ffffff;
+  --color-negro: #000000;
+
+  --fuente-titulos: "Playfair Display";
+  --fuente-texto: "PT Sans Narrow";
+}
+
+/* ==============================
    ESTILOS GENERALES
 ============================== */
 
@@ -63,8 +77,8 @@ header h2,
 .education h2,
 .nav h2,
 .carrera h2 {
-  color: #9e8c6c;
-  font-family: "PT Sans Narrow";
+  color: var(--color-secundario);
+  font-family: var(--fuente-texto);
   font-weight: 700;
   font-size: 14px;
   line-height: 20px;
@@ -85,7 +99,7 @@ header h1 {
   position: relative;
   z-index: 1;
   margin: 14px 0 0 15px;
-  font-family: "Playfair Display";
+  font-family: var(--fuente-titulos);
   font-weight: 900;
   font-size: 56px;
   line-height: 46px;
@@ -100,9 +114,9 @@ header button {
   height: 60px;
   margin: 40px 0 100px;
   border: none;
-  background-color: #0699a6;
-  color: white;
-  font-family: "PT Sans Narrow";
+  background-color: var(--color-principal);
+  color: var(--color-blanco);
+  font-family: var(--fuente-texto);
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
@@ -126,7 +140,7 @@ header button {
 .about_me h1,
 .experience h1,
 .education h1 {
-  font-family: "Playfair Display";
+  font-family: var(--fuente-titulos);
   font-weight: 900;
   letter-spacing: 0;
 }
@@ -144,7 +158,7 @@ header button {
 .about_me p,
 .experience p,
 .carrera_explicacion {
-  font-family: "PT Sans Narrow";
+  font-family: var(--fuente-texto);
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
@@ -166,7 +180,7 @@ header button {
 
 .experience h3 {
   margin-top: 8px;
-  font-family: "PT Sans Narrow";
+  font-family: var(--fuente-texto);
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
@@ -192,20 +206,20 @@ header button {
 }
 
 .education p {
-  font-family: "PT Sans Narrow";
+  font-family: var(--fuente-texto);
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
 }
 
 /* ==============================
-   NAVIGATION
+   COLUMNA LATERAL
 ============================== */
 
 .nav ul {
   padding-left: 0;
   list-style: none;
-  font-family: "PT Sans Narrow";
+  font-family: var(--fuente-texto);
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
@@ -224,8 +238,8 @@ header button {
 }
 
 .recent_works_ul {
-  color: #0699a6;
-  font-family: "PT Sans Narrow";
+  color: var(--color-principal);
+  font-family: var(--fuente-texto);
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
@@ -236,11 +250,15 @@ header button {
   height: 10px;
   margin: 40px 0;
   margin-left: 20px;
-  background-color: #0699a6;
+  background-color: var(--color-principal);
 }
 
 .block {
   display: block;
+}
+
+.hidden {
+  display: none;
 }
 
 /* ==============================
@@ -254,7 +272,9 @@ footer {
   align-items: center;
   margin-top: 71px;
   padding-top: 100px;
-  height: 425px;
+  padding-bottom: 92px;
+  min-height: 425px;
+  box-sizing: border-box;
   overflow: hidden;
   clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
 }
@@ -266,7 +286,7 @@ footer h2 {
   margin-left: 20px;
   margin-right: 20px;
   text-align: center;
-  font-family: "Playfair Display";
+  font-family: var(--fuente-titulos);
   font-weight: 900;
 }
 
@@ -279,7 +299,7 @@ footer h1 {
 
 footer h2 {
   margin-top: 40px;
-  color: #0699a6;
+  color: var(--color-principal);
   font-size: 26px;
   line-height: 36px;
 }
@@ -289,12 +309,14 @@ footer h2 .separador {
 }
 
 footer .iconos {
+  position: relative;
+  z-index: 1;
   display: flex;
   justify-content: space-between;
   width: 242px;
   height: 25px;
   margin-top: 45px;
-  margin-bottom: 92px;
+  margin-bottom: 0;
 }
 
 /* ==============================
@@ -337,13 +359,9 @@ footer .iconos {
     margin-right: 139px;
   }
 
-  p ul li {
-    font-size: 20px;
-    line-height: 34px;
-  }
-
   footer {
-    height: 501px;
+    min-height: 501px;
+    padding-bottom: 112px;
   }
 
   footer h1 {
@@ -361,11 +379,15 @@ footer .iconos {
     margin-left: 144px;
     margin-right: 139px;
   }
-
-  footer .iconos {
-    margin-bottom: 112px;
-  }
 }
+
+/* ==============================
+   ESCRITORIO
+============================== */
+
+/* ==============================
+   ESCRITORIO
+============================== */
 
 /* ==============================
    ESCRITORIO
@@ -424,39 +446,75 @@ footer .iconos {
   /* MAIN */
 
   main {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    align-items: flex-start;
-    margin-left: 165px;
-    margin-right: 165px;
-    padding-top: 90px;
-    padding-bottom: 80px;
+    display: grid;
+    grid-template-columns: 350px 635px;
+    column-gap: 125px;
+    align-items: start;
+
+    width: 1110px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 90px 0 80px;
   }
 
-  .columna_1 {
-    width: 315px;
-    margin-top: 60px;
+  /* COLUMNA LATERAL */
+
+  .nav {
+    grid-column: 1;
+    grid-row: 1;
+
+    width: 350px;
+    margin: 0;
+    padding: 0;
   }
 
-  .rectangulo_azul {
-    width: 71px;
-    height: 10px;
-    margin-top: 80px;
-    margin-bottom: 66px;
+  .nav h2 {
+    margin-top: 0;
   }
+
+  /* COLUMNA PRINCIPAL */
+
+  .columna_2 {
+    grid-column: 2;
+    grid-row: 1;
+
+    width: 635px;
+    min-width: 0;
+  }
+
+  .about_me,
+  .experience,
+  .education {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .about_me h1 {
+    margin-top: 0;
+  }
+
+  /* TEXTOS */
+
+  .about_me p,
+  .experience p {
+    width: 100%;
+    font-size: 20px;
+    line-height: 34px;
+    text-align: left;
+  }
+
+  .carrera_explicacion p {
+    text-align: left;
+  }
+
+  /* TITULOS */
 
   .about_me h1,
   .experience h1,
   .education h1 {
     font-size: 36px;
     line-height: 46px;
-  }
-
-  .about_me p,
-  .experience p {
-    font-size: 20px;
-    line-height: 34px;
   }
 
   .experience h1 {
@@ -473,7 +531,24 @@ footer .iconos {
     margin-top: 0;
   }
 
-  /* OTHER SECTIONS */
+  /* SEPARADORES */
+
+  .rectangulo_azul {
+    width: 71px;
+    height: 10px;
+    margin: 80px 0 66px;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  /* COLUMNA LATERAL: ESPACIADO */
+
+  .nav ul {
+    font-size: 18px;
+    line-height: 30px;
+  }
 
   .awards,
   .carrera,
@@ -481,21 +556,18 @@ footer .iconos {
     margin-top: 100px;
   }
 
+  /* FLEX */
+
   .flex {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
 
-  .hidden {
-    display: none;
-  }
-
   /* FOOTER */
 
   footer {
-    height: auto;
-    min-height: 501px;
+    min-height: 0;
     padding-bottom: 111px;
   }
 
