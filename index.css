@@ -1,18 +1,23 @@
-footer h2 .separador {
-  display: none;
-}
+/* ==============================
+   ESTILOS GENERALES
+============================== */
 
 body {
   margin: 0;
   padding: 0;
 }
 
+/* ==============================
+   HEADER
+============================== */
+
 header {
   position: relative;
-  clip-path: polygon(0 0, 100% 0%, 100% 94%, 0 100%);
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 596px;
+  clip-path: polygon(0 0, 100% 0%, 100% 94%, 0 100%);
 }
 
 header::before,
@@ -24,6 +29,13 @@ footer::before {
   z-index: 0;
 }
 
+.header_texto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
 .foto_con_shape {
   position: relative;
   width: fit-content;
@@ -32,15 +44,15 @@ footer::before {
 }
 
 .foto_perfil {
+  display: block;
   width: 160px;
   height: 160px;
   border-radius: 175px;
-  display: block;
 }
 
 .combined_shape {
-  width: 100px;
   position: absolute;
+  width: 100px;
   left: 90px;
   top: -30px;
   z-index: 2;
@@ -60,16 +72,18 @@ header h2,
 }
 
 header h2 {
+  position: relative;
+  z-index: 1;
   margin: 30px 0 0 15px;
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 2px;
   text-align: center;
-  position: relative;
-  z-index: 1;
 }
 
 header h1 {
+  position: relative;
+  z-index: 1;
   margin: 14px 0 0 15px;
   font-family: "Playfair Display";
   font-weight: 900;
@@ -77,14 +91,14 @@ header h1 {
   line-height: 46px;
   letter-spacing: -2.17px;
   text-align: center;
-  position: relative;
-  z-index: 1;
 }
 
 header button {
+  position: relative;
+  z-index: 1;
   width: 225px;
   height: 60px;
-  margin: 40px 0px 100px;
+  margin: 40px 0 100px;
   border: none;
   background-color: #0699a6;
   color: white;
@@ -95,16 +109,11 @@ header button {
   letter-spacing: 2px;
   text-align: center;
   text-transform: uppercase;
-  position: relative;
-  z-index: 1;
 }
 
-.header_texto {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-}
+/* ==============================
+   MAIN - CONTENIDO GENERAL
+============================== */
 
 .about_me,
 .experience,
@@ -146,6 +155,10 @@ header button {
   margin-top: 10px;
 }
 
+/* ==============================
+   EXPERIENCE
+============================== */
+
 .experience h2 {
   margin-top: 24px;
   letter-spacing: 1px;
@@ -163,13 +176,18 @@ header button {
   margin-top: 20px;
 }
 
+/* ==============================
+   EDUCATION
+============================== */
+
 .education h1 {
   font-size: 36px;
   line-height: 46px;
 }
 
 .education h2,
-.carrera h2 {
+.carrera h2,
+.nav h2 {
   letter-spacing: 2px;
 }
 
@@ -180,9 +198,9 @@ header button {
   line-height: 24px;
 }
 
-.nav h2 {
-  letter-spacing: 2px;
-}
+/* ==============================
+   NAVIGATION
+============================== */
 
 .nav ul {
   padding-left: 0;
@@ -192,6 +210,10 @@ header button {
   font-size: 18px;
   line-height: 30px;
 }
+
+/* ==============================
+   OTHER SECTIONS
+============================== */
 
 .awards {
   margin-top: 60px;
@@ -209,24 +231,41 @@ header button {
   line-height: 30px;
 }
 
+.rectangulo_azul {
+  width: 54px;
+  height: 10px;
+  margin: 40px 0;
+  margin-left: 20px;
+  background-color: #0699a6;
+}
+
+.block {
+  display: block;
+}
+
+/* ==============================
+   FOOTER
+============================== */
+
 footer {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 71px;
   padding-top: 100px;
-  position: relative;
-  clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+  height: 425px;
   overflow: hidden;
+  clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
 }
 
 footer h1,
 footer h2 {
+  position: relative;
+  z-index: 1;
   margin-left: 20px;
   margin-right: 20px;
   text-align: center;
-  position: relative;
-  z-index: 1;
   font-family: "Playfair Display";
   font-weight: 900;
 }
@@ -245,39 +284,35 @@ footer h2 {
   line-height: 36px;
 }
 
+footer h2 .separador {
+  display: none;
+}
+
 footer .iconos {
   display: flex;
   justify-content: space-between;
-  margin-top: 45px;
-  margin-bottom: 92px;
   width: 242px;
   height: 25px;
+  margin-top: 45px;
+  margin-bottom: 92px;
 }
 
-.rectangulo_azul {
-  width: 54px;
-  height: 10px;
-  margin: 40px 0;
-  margin-left: 20px;
-  background-color: #0699a6;
-}
-
-.block {
-  display: block;
-}
+/* ==============================
+   TABLET
+============================== */
 
 @media (min-width: 768px) {
+  header {
+    height: 736px;
+  }
+
   .foto_perfil {
     width: 200px;
     height: 200px;
   }
 
   .combined_shape {
-    width: 100px;
-    position: absolute;
     left: 130px;
-    top: -30px;
-    z-index: 2;
   }
 
   header h1 {
@@ -307,7 +342,12 @@ footer .iconos {
     line-height: 34px;
   }
 
+  footer {
+    height: 501px;
+  }
+
   footer h1 {
+    margin-top: 120px;
     font-size: 56px;
     line-height: 66px;
   }
@@ -321,31 +361,39 @@ footer .iconos {
     margin-left: 144px;
     margin-right: 139px;
   }
+
+  footer .iconos {
+    margin-bottom: 112px;
+  }
 }
 
+/* ==============================
+   ESCRITORIO
+============================== */
+
 @media (min-width: 1440px) {
+  /* HEADER */
+
   header {
-    display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    gap: 125px;
+    height: 747px;
     padding-top: 180px;
     padding-bottom: 217px;
-    gap: 125px;
   }
 
   .header_texto {
-    display: flex;
-    flex-direction: column;
     align-items: flex-start;
     width: auto;
   }
 
   header h1 {
     margin-left: 0;
-    text-align: left;
     font-size: 126px;
     line-height: 112px;
+    text-align: left;
   }
 
   header h2 {
@@ -373,15 +421,15 @@ footer .iconos {
     margin-left: 110px;
   }
 
+  /* MAIN */
+
   main {
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
     align-items: flex-start;
-
     margin-left: 165px;
     margin-right: 165px;
-
     padding-top: 90px;
     padding-bottom: 80px;
   }
@@ -392,10 +440,10 @@ footer .iconos {
   }
 
   .rectangulo_azul {
-    margin-top: 80px;
-    margin-bottom: 66px;
     width: 71px;
     height: 10px;
+    margin-top: 80px;
+    margin-bottom: 66px;
   }
 
   .about_me h1,
@@ -409,38 +457,6 @@ footer .iconos {
   .experience p {
     font-size: 20px;
     line-height: 34px;
-  }
-
-  .awards,
-  .carrera,
-  .recent_works {
-    margin-top: 100px;
-  }
-
-  footer h1 {
-    margin-top: 177px;
-    font-size: 66px;
-    line-height: 82px;
-  }
-
-  footer h2 {
-    max-width: 635px;
-    font-size: 36px;
-    line-height: 46px;
-  }
-
-  .iconos {
-    margin-bottom: 111px;
-  }
-
-  .flex {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .hidden {
-    display: none;
   }
 
   .experience h1 {
@@ -457,11 +473,43 @@ footer .iconos {
     margin-top: 0;
   }
 
+  /* OTHER SECTIONS */
+
+  .awards,
+  .carrera,
+  .recent_works {
+    margin-top: 100px;
+  }
+
+  .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  /* FOOTER */
+
+  footer h1 {
+    margin-top: 177px;
+    font-size: 66px;
+    line-height: 82px;
+  }
+
+  footer h2 {
+    font-size: 36px;
+    line-height: 46px;
+    gap: 20px;
+  }
+
   footer h2 .separador {
     display: inline;
   }
 
-  footer h2 {
-    gap: 20px;
+  footer .iconos {
+    margin-bottom: 111px;
   }
 }
